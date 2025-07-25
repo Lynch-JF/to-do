@@ -81,6 +81,11 @@ form button:hover {
   margin: 0;
 }
 
+.task-list:hover{
+    box-shadow: 5px 5px lightblue;
+
+}
+
 .task-item {
   background: #f9f9f9;
   margin: 10px 0;
@@ -103,6 +108,7 @@ form button:hover {
   display: flex;
   gap: 5px;
 }
+
 
 .task-actions button {
   border: none;
