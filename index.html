@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do Diario - SPA</title>
+  <link rel="stylesheet" href="Css/Css.css">
+  
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Mis Tareas Diarias</h1>
+
+    <form id="taskForm">
+      <input type="text" id="taskInput" placeholder="Escribe una tarea..." required />
+      <select id="prioritySelect">
+        <option value="Alta">🔴 Alta</option>
+        <option value="Media">🟠 Media</option>
+        <option value="Normal" selected>🟢 Normal</option>
+      </select>
+      <button type="submit">Agregar</button>
+    </form>
+
+    <div class="filter">
+      <label for="filterPriority">Filtrar por prioridad:</label>
+      <select id="filterPriority">
+        <option value="Todas" selected>Todas</option>
+        <option value="Alta">🔴 Alta</option>
+        <option value="Media">🟠 Media</option>
+        <option value="Normal">🟢 Normal</option>
+      </select>
+    </div>
+
+    <div class="kanban">
+      <div class="column" id="pendientes">
+        <h2>Pendientes</h2>
+        <ul class="task-list" id="listaPendientes"></ul>
+      </div>
+      <div class="column" id="enProceso">
+        <h2>En Proceso</h2>
+        <ul class="task-list" id="listaEnProceso"></ul>
+      </div>
+      <div class="column" id="terminadas">
+        <h2>Terminadas</h2>
+        <ul class="task-list" id="listaTerminadas"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="JS/js.js"></script>
+</body>
+</html>
